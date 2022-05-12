@@ -1,0 +1,116 @@
+ <div class="container">
+    <div class=" text-center mt-5 ">
+
+        <h1 >Ajouter Medicament</h1>
+            
+        
+    </div>
+
+
+<div class="row ">
+  <div class="col-lg-7 mx-auto">
+    <div class="card mt-2 mx-auto p-4 bg-light">
+        <div class="card-body bg-light">
+   
+        <div class = "container">
+            <form [formGroup]="MedicamentForm" >
+  <div class="controls">
+   <div class="row">
+       <div class="col-md-6">
+           <div class="form-group">
+                 <label >co *</label>
+                 <input id="co" type="text" name="co" class="form-control" formControlName="co"  required="required" data-error="co is required.">
+                        
+            </div>
+    </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label >nom *</label>
+                        <input id="nom" type="text" name="nom" class="form-control" formControlName="nom" required="required" data-error="nom is required.">
+                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label >presentation *</label>
+                        <input id="presentation" type="text" name="presentation" class="form-control" formControlName="presentation" required="required" data-error="Valid presentation is required.">
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label >nom_generique *</label>
+                        <input id="nom_generique" type="text" name="nom_generique" class="form-control" formControlName="nom_generique"  required="required" data-error="nom_generique is required.">
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label >labo *</label>
+                        <input id="labo" type="text" name="labo" class="form-control"  required="required" formControlName="labo" data-error="labo is required.">
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label >pays *</label>
+                        <input id="pays" type="text" name="pays" class="form-control" formControlName="pays" required="required" data-error="pays is required.">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label >g_p *</label>
+                        <input id="g_p" type="text" name="g_p" class="form-control" formControlName="g_p"  required="required" data-error="g_p is required.">
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label >amm *</label>
+                        <input id="amm" type="text" name="amm" class="form-control" formControlName="amm"  required="required" data-error="amm is required.">
+                    </div>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label >date_amm *</label>
+                        <input id="form_name" type="datetime-local" name="name" class="form-control" formControlName="date_amm"  required="required" data-error="date_amm is required.">
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label >dosage *</label>
+                        <input id="dosage" type="text" name="dosage" class="form-control" formControlName="dosage"  required="required" data-error="dosage is required.">
+                        
+                    </div>
+                </div>
+             </div>
+            
+
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto mt-3">
+        <button class="btn btn-primary" type="submit" (click)="addMed()">Add</button>
+        
+      </div>
+     </form>
+    </div>
+        </div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+
